@@ -19,7 +19,7 @@ function App() {
     const responseJson = await response.json()
     if (responseJson.Search){
       setMovies(responseJson.Search)
-    }
+    }else{}
   }
 
     useEffect(() => {
