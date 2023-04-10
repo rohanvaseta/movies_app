@@ -40,7 +40,7 @@ function App() {
   return (
     <div className="container-fluid ">
     <div className='row d-flex align-items-center mt-4 mb-4'>
-          <MovieListHeading heading="Movies"/>
+          <MovieListHeading heading="Ro-1 Movies"/>
           <SearchBox searchValue={searchValue} setSearchValue={setSearchValue}/>
       </div>
       <div className='row' >
