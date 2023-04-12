@@ -17,13 +17,13 @@ const Header = (props) => {
       <ul className=" flex items-center  flex-wrap flex-row">
         <li className="flex p-5 xl:p-8 active">
         <Link to="/">
-            <span>Home</span>
+        <span className='hover:bg-red-300 rounded-lg p-2'>Home</span>
             </Link>
         </li>
       
         <li className="p-5 xl:p-8">
        <Link to="/Favourite">
-            <span>Favourite</span>
+       <span className='hover:bg-red-300 rounded-lg p-2'>Favourite</span>
             </Link>
         </li>
       </ul>
