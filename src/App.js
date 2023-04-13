@@ -68,8 +68,9 @@ function App() {
     <div className="bg-gradient-to-r from-violet-200 to-pink-200">
       <Router>
       <Header searchValue={searchValue} setSearchValue={setSearchValue} />
+      <SearchMovies searchData={searchData} addFavoriteMovie={addFavoriteMovie}/>
       <Routes>
-      <Route path="/" element={<><SearchMovies searchData={searchData} addFavoriteMovie={addFavoriteMovie}/>
+      <Route path="/" element={<>
       <TreandingMovies MoviesData={MoviesData} addFavoriteMovie={addFavoriteMovie} />
       <TvSeries tvData={tvData} addFavoriteMovie={addFavoriteMovie} /></>} />
       </Routes><Routes>

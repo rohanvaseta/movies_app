@@ -4,7 +4,7 @@ const SearchMovies = (props) => {
   return (
     <div>
       {props.searchData.length > 0 ? (
-        <div className="bg-rose-200">
+        <div className="bg-amber-100">
           <div className="ml-4 mr-4 uppercase font-black text-purple-900 text-lg border-b-2 border-black ">
             <span>SEARCHED RESULTS</span>
           </div>
@@ -14,7 +14,7 @@ const SearchMovies = (props) => {
                 <div  className="w-72 h-108 flex flex-wrap justify-center items-center hover:bg-gray-400 rounded-md">
       <img className="inline w-64 h-68 mt-3 mb-0" src={`https://image.tmdb.org/t/p/w500/${val.poster_path}`} alt="" />
       <div className='w-48'><h3 className="">{val.title}</h3>
-      <button onClick={()=>props.addFavoriteMovie(val)} className='bg-red-200 rounded-lg px-2'>Add To fav &hearts;</button>
+      <button onClick={()=>props.addFavoriteMovie(val)} className='bg-red-200 rounded-lg px-2 ml-6'>Add To fav &hearts;</button>
       </div>
      
   </div>
